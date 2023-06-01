@@ -1,0 +1,15 @@
+C:\Users\DDrumgoole\source\repos\DylansShoeShop\DylansShoeShop\bin\Debug\net6.0\DylansShoeShop.exe
+C:\Users\DDrumgoole\source\repos\DylansShoeShop\DylansShoeShop\bin\Debug\net6.0\DylansShoeShop.deps.json
+C:\Users\DDrumgoole\source\repos\DylansShoeShop\DylansShoeShop\bin\Debug\net6.0\DylansShoeShop.runtimeconfig.json
+C:\Users\DDrumgoole\source\repos\DylansShoeShop\DylansShoeShop\bin\Debug\net6.0\DylansShoeShop.dll
+C:\Users\DDrumgoole\source\repos\DylansShoeShop\DylansShoeShop\bin\Debug\net6.0\DylansShoeShop.pdb
+C:\Users\DDrumgoole\source\repos\DylansShoeShop\DylansShoeShop\obj\Debug\net6.0\DylansShoeShop.csproj.AssemblyReference.cache
+C:\Users\DDrumgoole\source\repos\DylansShoeShop\DylansShoeShop\obj\Debug\net6.0\DylansShoeShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DDrumgoole\source\repos\DylansShoeShop\DylansShoeShop\obj\Debug\net6.0\DylansShoeShop.AssemblyInfoInputs.cache
+C:\Users\DDrumgoole\source\repos\DylansShoeShop\DylansShoeShop\obj\Debug\net6.0\DylansShoeShop.AssemblyInfo.cs
+C:\Users\DDrumgoole\source\repos\DylansShoeShop\DylansShoeShop\obj\Debug\net6.0\DylansShoeShop.csproj.CoreCompileInputs.cache
+C:\Users\DDrumgoole\source\repos\DylansShoeShop\DylansShoeShop\obj\Debug\net6.0\DylansShoeShop.dll
+C:\Users\DDrumgoole\source\repos\DylansShoeShop\DylansShoeShop\obj\Debug\net6.0\refint\DylansShoeShop.dll
+C:\Users\DDrumgoole\source\repos\DylansShoeShop\DylansShoeShop\obj\Debug\net6.0\DylansShoeShop.pdb
+C:\Users\DDrumgoole\source\repos\DylansShoeShop\DylansShoeShop\obj\Debug\net6.0\DylansShoeShop.genruntimeconfig.cache
+C:\Users\DDrumgoole\source\repos\DylansShoeShop\DylansShoeShop\obj\Debug\net6.0\ref\DylansShoeShop.dll
