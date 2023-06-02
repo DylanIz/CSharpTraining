@@ -1,15 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading.Tasks.Dataflow;
 
 namespace DylansShoeShop
 {
     internal class Utilities
     {
+        public static void ParsingStrings()
+        {
+            Console.Write("Enter the wage: ");
+            string wage = Console.ReadLine();
+
+            int wageValue;
+            if (int.TryParse(wage, out wageValue))
+                Console.WriteLine("Parsing success: " + wageValue);
+            else
+                Console.WriteLine("Parsing fail");
+
+            string hireDateString = "12/12/2022";
+            DateTime hireDate = DateTime.Parse(hireDateString);
+            Console.WriteLine("Parsed date: " + hireDate);
+        }
+
+
         public static int CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked)
         {
             //Console.WriteLine($"The yearly wage is: {monthlyWage * numberOfMonthsWorked}");
