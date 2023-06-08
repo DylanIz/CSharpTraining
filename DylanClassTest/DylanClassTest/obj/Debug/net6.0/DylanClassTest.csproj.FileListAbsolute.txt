@@ -1,0 +1,15 @@
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTest\obj\Debug\net6.0\DylanClassTest.csproj.AssemblyReference.cache
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTest\obj\Debug\net6.0\DylanClassTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTest\obj\Debug\net6.0\DylanClassTest.AssemblyInfoInputs.cache
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTest\obj\Debug\net6.0\DylanClassTest.AssemblyInfo.cs
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTest\obj\Debug\net6.0\DylanClassTest.csproj.CoreCompileInputs.cache
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTest\bin\Debug\net6.0\DylanClassTest.exe
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTest\bin\Debug\net6.0\DylanClassTest.deps.json
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTest\bin\Debug\net6.0\DylanClassTest.runtimeconfig.json
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTest\bin\Debug\net6.0\DylanClassTest.dll
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTest\bin\Debug\net6.0\DylanClassTest.pdb
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTest\obj\Debug\net6.0\DylanClassTest.dll
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTest\obj\Debug\net6.0\refint\DylanClassTest.dll
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTest\obj\Debug\net6.0\DylanClassTest.pdb
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTest\obj\Debug\net6.0\DylanClassTest.genruntimeconfig.cache
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTest\obj\Debug\net6.0\ref\DylanClassTest.dll
