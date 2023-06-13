@@ -20,6 +20,20 @@ namespace DylanClassTest
 
         const int minimalHoursWorkedUnit = 1;
 
+        public Employee(string first, string last, string em, DateTime bd) : this(first,last,em,bd,0)
+        {
+            
+        }
+
+        public Employee(string first, string last, string em, DateTime bd, double rate)
+        {
+            firstName = first;
+            lastName = last;
+            email = em;
+            birthDay = bd;
+            hourlyRate = rate;
+        }
+
         public void PerformWork()
         {
             //numberOfHoursWorked++;
