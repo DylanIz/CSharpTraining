@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DDrumgoole\\source\\repos\\DylansShoeShop\\DylansShoeShop\\DylansShoeShop.csproj": {}
+    "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\DylansShoeShop\\DylansShoeShop\\DylansShoeShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DDrumgoole\\source\\repos\\DylansShoeShop\\DylansShoeShop\\DylansShoeShop.csproj": {
+    "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\DylansShoeShop\\DylansShoeShop\\DylansShoeShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DDrumgoole\\source\\repos\\DylansShoeShop\\DylansShoeShop\\DylansShoeShop.csproj",
+        "projectUniqueName": "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\DylansShoeShop\\DylansShoeShop\\DylansShoeShop.csproj",
         "projectName": "DylansShoeShop",
-        "projectPath": "C:\\Users\\DDrumgoole\\source\\repos\\DylansShoeShop\\DylansShoeShop\\DylansShoeShop.csproj",
+        "projectPath": "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\DylansShoeShop\\DylansShoeShop\\DylansShoeShop.csproj",
         "packagesPath": "C:\\Users\\DDrumgoole\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DDrumgoole\\source\\repos\\DylansShoeShop\\DylansShoeShop\\obj\\",
+        "outputPath": "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\DylansShoeShop\\DylansShoeShop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DDrumgoole\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -13,3 +13,5 @@ C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTes
 C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTest\obj\Debug\net6.0\DylanClassTest.pdb
 C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTest\obj\Debug\net6.0\DylanClassTest.genruntimeconfig.cache
 C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTest\obj\Debug\net6.0\ref\DylanClassTest.dll
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTest\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\DylanClassTest\DylanClassTest\obj\Debug\net6.0\DylanClassTest.csproj.CopyComplete

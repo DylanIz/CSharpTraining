@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "g+gPgD1xxmHfp+8GPhHRq6tlOsOy0em29Eeu4teoqgiXh5IpVMPjylXtD1Tdn4avBELsltJ74SJgy0EV9QasOA==",
+  "dgSpecHash": "ewdXrCEzLxi27nnUGBGjeNTOoTakoGNd2VgkrTHGdDSgpnJa65jG+lkyD/4XI0mlhDxmZAGhKi+GKaLPG8rGWA==",
   "success": true,
   "projectFilePath": "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\DylanClassTest\\DylanClassTest\\DylanClassTest.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\DDrumgoole\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
