@@ -8,11 +8,27 @@ using DylanClassTest;
 Console.WriteLine("Creating an employee");
 Console.WriteLine("--------------------\n");
 
-Employee dylan = new Employee("Dylan", "Drumgoole", "dylan@gmail.com", new DateTime(1998, 3, 5), 25);
+Employee dylan = new Employee("Dylan", "Drumgoole", "dylan@gmail.com", new DateTime(1998, 3, 5), 25, EmployeeType.Manager);
 
 
-string dylanAsJson = dylan.ConvertToJson();
-Console.WriteLine(dylanAsJson);
+Employee Paul = new Employee("Paul", "Smith", "paul@gmail.com", new DateTime(1996, 8, 22), 28, EmployeeType.Research);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//string dylanAsJson = dylan.ConvertToJson();
+//Console.WriteLine(dylanAsJson);
 
 
 //string name = "Bethany";
