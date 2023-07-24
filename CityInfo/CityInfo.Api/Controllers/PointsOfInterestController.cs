@@ -1,6 +1,7 @@
 ﻿using CityInfo.Api.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Cryptography.X509Certificates;
 
 namespace CityInfo.Api.Controllers
 {
@@ -49,6 +50,11 @@ namespace CityInfo.Api.Controllers
             int cityId,
             PointOfInterestForCreationDto pointOfInterest)
         {
+            if(!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
             var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
             if (city == null)
             {
@@ -74,6 +80,15 @@ namespace CityInfo.Api.Controllers
                     pointOfInterest = finalPointOfInterest.Id
                 },
                 finalPointOfInterest);
+
+        }
+
+        [HttpPut("{pointofinterestid}")]
+
+        public ActionResult UpdatePointOfInterest(int cityId, int pointOfInterestId,
+            PointOfInterestForCreationDto pointOfInterest)
+        {
+
         }
     }
 }
