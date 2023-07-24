@@ -30,3 +30,4 @@ C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\CityInfo\CityInfo.Api\obj\De
 C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\CityInfo\CityInfo.Api\obj\Debug\net6.0\CityInfo.Api.pdb
 C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\CityInfo\CityInfo.Api\obj\Debug\net6.0\CityInfo.Api.genruntimeconfig.cache
 C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\CityInfo\CityInfo.Api\obj\Debug\net6.0\ref\CityInfo.Api.dll
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\CityInfo\CityInfo.Api\bin\Debug\net6.0\getting-started-with-rest-slides.pdf
