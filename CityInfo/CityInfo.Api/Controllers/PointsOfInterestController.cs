@@ -1,5 +1,6 @@
 ﻿using CityInfo.Api.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Cryptography.X509Certificates;
 
@@ -88,7 +89,51 @@ namespace CityInfo.Api.Controllers
         public ActionResult UpdatePointOfInterest(int cityId, int pointOfInterestId,
             PointOfInterestForCreationDto pointOfInterest)
         {
+            
+        }
+
+        [HttpPatch("{pointofinterestid}")]
+
+        public ActionResult PartiallyUpdatePointOfInterest(
+            int cityId, int pointOfInterestId,
+            JsonPatchDocument<PointOfInterestForUpdateDto> patchDocument)
+        {
+            var city = CitiesDataStore.Current.Cities
+                .FirstOrDefault(c => c.Id == cityId);
+
+            if(city == null)
+            {
+                return NotFound();
+            }
+
+
+            var pointOfInterestFromStore = city.PointsOfInterest
+                .FirstOrDefault(c => c.Id == pointOfInterestId);
+
+            if(pointOfInterestFromStore == null)
+            {
+                return NotFound();
+            }
+
+            var pointOfInterestToPatch =
+                new PointOfInterestForUpdateDto()
+                {
+                    Name = pointOfInterestFromStore.Name,
+                    Description = pointOfInterestFromStore.Description
+                };
+
+            patchDocument.ApplyTo(pointOfInterestToPatch, ModelState);
+
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
         }
-    }
+
+
+    }   
+
+
 }

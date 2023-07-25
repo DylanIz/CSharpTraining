@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "CsjjOWhflvPFsG0RQ7WSRu3+d+beya0+Y+RMgB6j7mvZvy+HZUW8WNS6y5ruwCAzbQF4uESLO5VvI+I6EMKXGQ==",
+  "dgSpecHash": "P2nlR7lWKy64L8yzYsbW2HyL8ccfK1YD5LTMKqH6WKJjRW5VBUh9qSDzFnbWSdIOYwHYMfCAj337LZgi2gzEPg==",
   "success": true,
   "projectFilePath": "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\CityInfo\\CityInfo.Api\\CityInfo.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\8.0.0-preview.6.23329.11\\microsoft.aspnetcore.jsonpatch.8.0.0-preview.6.23329.11.nupkg.sha512",
+    "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.20\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.20.nupkg.sha512",
+    "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\DDrumgoole\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\DDrumgoole\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
