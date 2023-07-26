@@ -418,3 +418,81 @@ VALUES ('20230726125257_CityInfoDBInitialMigration', '6.0.20');
 2023-07-26 13:58:06.030 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\CityInfo\CityInfo.Api\CityInfo.db'.
 2023-07-26 13:58:06.030 +01:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db'.
 2023-07-26 13:58:06.032 +01:00 [DBG] 'CityInfoContext' disposed.
+2023-07-26 14:38:30.387 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-07-26 14:38:31.329 +01:00 [INF] Entity Framework Core 6.0.20 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.20' with options: None
+2023-07-26 14:38:31.454 +01:00 [DBG] DetectChanges starting for 'CityInfoContext'.
+2023-07-26 14:38:31.457 +01:00 [DBG] DetectChanges completed for 'CityInfoContext'.
+2023-07-26 14:38:31.458 +01:00 [DBG] DetectChanges starting for 'CityInfoContext'.
+2023-07-26 14:38:31.458 +01:00 [DBG] DetectChanges completed for 'CityInfoContext'.
+2023-07-26 14:38:31.465 +01:00 [DBG] DetectChanges starting for 'CityInfoContext'.
+2023-07-26 14:38:31.465 +01:00 [DBG] DetectChanges completed for 'CityInfoContext'.
+2023-07-26 14:38:31.465 +01:00 [DBG] DetectChanges starting for 'CityInfoContext'.
+2023-07-26 14:38:31.465 +01:00 [DBG] DetectChanges completed for 'CityInfoContext'.
+2023-07-26 14:38:31.555 +01:00 [DBG] 'CityInfoContext' disposed.
+2023-07-26 14:38:55.383 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-07-26 14:38:56.187 +01:00 [INF] Entity Framework Core 6.0.20 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.20' with options: None
+2023-07-26 14:38:56.252 +01:00 [DBG] Migrating using database 'main' on server 'CityInfo.db'.
+2023-07-26 14:38:56.258 +01:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-07-26 14:38:56.278 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\CityInfo\CityInfo.Api\CityInfo.db'.
+2023-07-26 14:38:56.294 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-07-26 14:38:56.301 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (6ms).
+2023-07-26 14:38:56.303 +01:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-07-26 14:38:56.307 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\CityInfo\CityInfo.Api\CityInfo.db'.
+2023-07-26 14:38:56.314 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-07-26 14:38:56.338 +01:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-07-26 14:38:56.340 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\CityInfo\CityInfo.Api\CityInfo.db'.
+2023-07-26 14:38:56.343 +01:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db'.
+2023-07-26 14:38:56.344 +01:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-07-26 14:38:56.345 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\CityInfo\CityInfo.Api\CityInfo.db'.
+2023-07-26 14:38:56.345 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-07-26 14:38:56.345 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-07-26 14:38:56.345 +01:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-07-26 14:38:56.345 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\CityInfo\CityInfo.Api\CityInfo.db'.
+2023-07-26 14:38:56.345 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-07-26 14:38:56.346 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-07-26 14:38:56.346 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\CityInfo\CityInfo.Api\CityInfo.db'.
+2023-07-26 14:38:56.346 +01:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db'.
+2023-07-26 14:38:56.362 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-07-26 14:38:56.362 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-07-26 14:38:56.362 +01:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-07-26 14:38:56.362 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\CityInfo\CityInfo.Api\CityInfo.db'.
+2023-07-26 14:38:56.362 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-07-26 14:38:56.363 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-07-26 14:38:56.365 +01:00 [DBG] A data reader was disposed.
+2023-07-26 14:38:56.366 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\CityInfo\CityInfo.Api\CityInfo.db'.
+2023-07-26 14:38:56.366 +01:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db'.
+2023-07-26 14:38:56.377 +01:00 [INF] Applying migration '20230726133831_CityInfoDBAddPointOfInterestDescription'.
+2023-07-26 14:38:56.416 +01:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-07-26 14:38:56.417 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\CityInfo\CityInfo.Api\CityInfo.db'.
+2023-07-26 14:38:56.418 +01:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-07-26 14:38:56.420 +01:00 [DBG] Began transaction with isolation level 'Serializable'.
+2023-07-26 14:38:56.422 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-07-26 14:38:56.422 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-07-26 14:38:56.422 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "PointsOfInterest" ADD "Description" TEXT NOT NULL DEFAULT '';
+2023-07-26 14:38:56.423 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "PointsOfInterest" ADD "Description" TEXT NOT NULL DEFAULT '';
+2023-07-26 14:38:56.423 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-07-26 14:38:56.423 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-07-26 14:38:56.423 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230726133831_CityInfoDBAddPointOfInterestDescription', '6.0.20');
+2023-07-26 14:38:56.429 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230726133831_CityInfoDBAddPointOfInterestDescription', '6.0.20');
+2023-07-26 14:38:56.430 +01:00 [DBG] Committing transaction.
+2023-07-26 14:38:56.435 +01:00 [DBG] Committed transaction.
+2023-07-26 14:38:56.436 +01:00 [DBG] Disposing transaction.
+2023-07-26 14:38:56.436 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\CityInfo\CityInfo.Api\CityInfo.db'.
+2023-07-26 14:38:56.436 +01:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db'.
+2023-07-26 14:38:56.438 +01:00 [DBG] 'CityInfoContext' disposed.
