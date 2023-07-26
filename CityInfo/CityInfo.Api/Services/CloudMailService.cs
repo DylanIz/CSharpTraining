@@ -1,8 +1,6 @@
-﻿using System.Diagnostics;
-
-namespace CityInfo.Api.Services
+﻿namespace CityInfo.Api.Services
 {
-    public class LocalMailService : IMailService
+    public class CloudMailService : IMailService
     {
         private string _mailTo = "sample@test.com";
         private string _mailFrom = "sample2@test.com";
@@ -10,9 +8,9 @@ namespace CityInfo.Api.Services
         public void Send(string subject, string message)
         {
             Console.WriteLine($"Mail from {_mailFrom} to {_mailTo}, " +
-                $"with {nameof(LocalMailService)}.");
+                $"with {nameof(CloudMailService)}.");
             Console.WriteLine($"Subject: {subject}");
             Console.WriteLine($"Message: {message}");
         }
-    }
-}
+}   }
+
