@@ -4,6 +4,7 @@ using CityInfo.Api.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 
 namespace CityInfo.Api.Controllers
@@ -33,32 +34,42 @@ namespace CityInfo.Api.Controllers
         }
 
         [HttpGet]
-        public async ActionResult<IEnumerable<PointOfInterestDto>> GetPointsOfInterest(int cityId)
+        public async Task<ActionResult<IEnumerable<PointOfInterestDto>>> GetPointsOfInterest(
+            int cityId)
         {
+            if (!await _cityInfoRepository.CityExistsAsync(cityId))
+            {
+                _logger.LogInformation(
+                    $"City with id {cityId} wasn't found when accessing points of interest.");
+                return NotFound();
+            }
+
             var pointsOfInterestForCity = await _cityInfoRepository
                 .GetPointsOfInterestForCityAsync(cityId);
+
+            return Ok(_mapper.Map<IEnumerable<PointOfInterestDto>>(pointsOfInterestForCity));  
+
         }
 
         [HttpGet("{pointofinterestid}", Name = "GetPointOfInterest")]
-        public ActionResult<PointOfInterestDto> GetPointOfInterest(
+        public async Task<ActionResult<PointOfInterestDto>> GetPointOfInterest(
             int cityId, int pointOfInterstId)
         {
-            var city = _citiesDataStore.Cities
-                .FirstOrDefault(c => c.Id == cityId);
-            if (city == null)
+
+            if (!await _cityInfoRepository.CityExistsAsync(cityId))
             {
                 return NotFound();
             }
 
-            var pointOfInterest = city.PointsOfInterest
-                .FirstOrDefault(c => c.Id == pointOfInterstId);
+            var pointOfInterest = await _cityInfoRepository
+                .GetPointOfInterestForCityAsync(cityId, pointOfInterstId);
 
             if (pointOfInterest == null)
             {
                 return NotFound();
             }
 
-            return Ok(city.PointsOfInterest);
+            return Ok(_mapper.Map<PointOfInterestDto>(pointOfInterest));
         }
 
         [HttpPost]
