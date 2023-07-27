@@ -53,6 +53,16 @@ namespace CityInfo.Api.Services
                     .Where(p => p.CityId == cityId).ToListAsync();
         }
 
+        public async Task AddPointOfInterestForCityAsync(int cityId,
+            PointOfInterest pointOfInterest)
+        {
+            var city = await GetCityAsync(cityId, false);
+            if (city != null)
+            {
+                city.PointsOfInterest.Add(pointOfInterest);
+            }
+        }
+
         
     }
 }
