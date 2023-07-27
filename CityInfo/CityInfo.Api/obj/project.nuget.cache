@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "y0CdiBU/RIJLrm9dKshlSvL/gQ+oqq/pSMGNQA7noTzx3P7OqAZfGQ1M2RbFd7dxANAGict8+A49mSFqtTQajA==",
+  "dgSpecHash": "j0l7lZV5/u+yMafPSPSxp2Fj9+lv7/DQKXDIrJe9gyXdvzhxENV+Ma8inXZzOgN/gWessnncp0SiD1rSa27juQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\CityInfo\\CityInfo.Api\\CityInfo.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\DDrumgoole\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\DDrumgoole\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.20\\microsoft.aspnetcore.jsonpatch.6.0.20.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.20\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.20.nupkg.sha512",
@@ -57,6 +59,7 @@
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\DDrumgoole\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"

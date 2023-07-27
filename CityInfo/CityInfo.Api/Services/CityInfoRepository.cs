@@ -1,14 +1,15 @@
 ﻿using CityInfo.Api.DbContexts;
 using CityInfo.Api.Entities;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace CityInfo.Api.Services
 {
-    public class CityInforRepository : ICityInfoRepository
+    public class CityInfoRepository : ICityInfoRepository
     {
         private readonly CityInfoContext _context;
 
-        public CityInforRepository(CityInfoContext context)
+        public CityInfoRepository(CityInfoContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }
@@ -47,9 +48,6 @@ namespace CityInfo.Api.Services
                     .Where(p => p.CityId == cityId).ToListAsync();
         }
 
-        Task<IEnumerable<City>> ICityInfoRepository.GetCitiesAsync()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
