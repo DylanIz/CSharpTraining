@@ -126,6 +126,49 @@ namespace CityInfo.Api.Controllers
 
             return NoContent();
 
+        }
+
+        [HttpPatch("{pointofinterestid}")]
+        public async Task<ActionResult> PartiallyUpdatePointOfInterest(
+            int cityId, int pointOfInterestId, PointOfInterestForUpdateDto pointOfInterest,
+            JsonPatchDocument<PointOfInterestForUpdateDto> patchDocument)
+        {
+            if (!await _cityInfoRepository.CityExistsAsync(cityId))
+            {
+                return NotFound();
+            }
+
+            var pointOfInterestEntity = await _cityInfoRepository
+                .GetPointOfInterestForCityAsync(cityId, pointOfInterestId);
+            if (pointOfInterestEntity == null)
+            {
+                return NotFound();
+            }
+
+            var pointOfInterestToPatch = _mapper.Map<PointOfInterestForUpdateDto>(
+                pointOfInterestEntity);
+
+
+            patchDocument.ApplyTo(pointOfInterestToPatch, ModelState);
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            if (!TryValidateModel(pointOfInterestToPatch))
+            {
+                return BadRequest(ModelState);
+            }
+
+            _mapper.Map(pointOfInterestToPatch, pointOfInterestEntity);
+            await _cityInfoRepository.SaveChangesAsync();
+
+            return NoContent();
+
+
+
+
             //[HttpDelete("{pointofInterestId}")]
 
             //public ActionResult DeletePointOfInterest(int cityId, int pointOfInterestId)
