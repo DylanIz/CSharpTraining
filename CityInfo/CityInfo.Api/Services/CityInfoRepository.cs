@@ -63,6 +63,10 @@ namespace CityInfo.Api.Services
             }
         }
 
+        public async Task<bool> SaveChangesAsync()
+        {
+            return (await _context.SaveChangesAsync() >= 0);
+        }
         
     }
 }
