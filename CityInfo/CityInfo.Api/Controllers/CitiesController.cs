@@ -25,20 +25,11 @@ namespace CityInfo.Api.Controllers
 
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CityWithoutPointsOfInterestDto>>> GetCities()
+        public async Task<ActionResult<IEnumerable<CityWithoutPointsOfInterestDto>>> GetCities(
+            string? name)
         {
-            var cityEntites = await _cityInfoRepository.GetCitiesAsync();
+            var cityEntites = await _cityInfoRepository.GetCitiesAsync(name);
 
-            //var results = new List<CityWithoutPointsOfInterestDto>();
-            //foreach (var cityEntity in cityEntites)
-            //{
-            //    results.Add(new CityWithoutPointsOfInterestDto
-            //    {
-            //        Id = cityEntity.Id,
-            //        Description = cityEntity.Description,
-            //        Name = cityEntity.Name
-            //    });
-            //}
             return Ok(_mapper.Map<IEnumerable<CityWithoutPointsOfInterestDto>>(cityEntites));
         }
 
