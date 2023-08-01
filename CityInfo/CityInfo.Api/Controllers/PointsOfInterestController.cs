@@ -104,7 +104,7 @@ namespace CityInfo.Api.Controllers
 
         }
 
-        [HttpPatch("{pointofinterestid}")]
+        [HttpPut("{pointofinterestid}")]
         public async Task<ActionResult> UpdatePointOfInterest(
             int cityId, int pointOfInterestId, PointOfInterestForUpdateDto pointOfInterest)
         {
@@ -130,7 +130,7 @@ namespace CityInfo.Api.Controllers
 
         [HttpPatch("{pointofinterestid}")]
         public async Task<ActionResult> PartiallyUpdatePointOfInterest(
-            int cityId, int pointOfInterestId, PointOfInterestForUpdateDto pointOfInterest,
+            int cityId, int pointOfInterestId,
             JsonPatchDocument<PointOfInterestForUpdateDto> patchDocument)
         {
             if (!await _cityInfoRepository.CityExistsAsync(cityId))
@@ -148,7 +148,6 @@ namespace CityInfo.Api.Controllers
             var pointOfInterestToPatch = _mapper.Map<PointOfInterestForUpdateDto>(
                 pointOfInterestEntity);
 
-
             patchDocument.ApplyTo(pointOfInterestToPatch, ModelState);
 
             if (!ModelState.IsValid)
@@ -165,8 +164,6 @@ namespace CityInfo.Api.Controllers
             await _cityInfoRepository.SaveChangesAsync();
 
             return NoContent();
-
-
         }
 
         [HttpDelete("{pointofInterestId}")]
