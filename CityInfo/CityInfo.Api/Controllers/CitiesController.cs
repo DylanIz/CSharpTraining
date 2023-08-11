@@ -22,7 +22,7 @@ namespace CityInfo.Api.Controllers
         {
              _cityInfoRepository = cityInfoRepository ??
                 throw new ArgumentNullException(nameof(cityInfoRepository));
-            _mapper = mapper ?? 
+             _mapper = mapper ?? 
                 throw new ArgumentNullException(nameof(mapper));
             
         }
