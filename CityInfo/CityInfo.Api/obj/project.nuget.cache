@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "RTbN9PO26LbZJTgVPAHkVAnV11f0r6Wa40sB9lxWl/WNZ0KyKr9Hu1zMyU75FIgW7LTajjHSDBHe4p1yawPd0A==",
+  "dgSpecHash": "/0oheI+mr6qtjh04BiWa4caKVIrrNoWOxBN6x2xGdRNzty1MfMHEcMs3a9z/VUQXDDp0TjPxOJZN1Z6Z9xHgZg==",
   "success": true,
   "projectFilePath": "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\CityInfo\\CityInfo.Api\\CityInfo.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.0\\microsoft.aspnetcore.authentication.jwtbearer.6.0.0.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.20\\microsoft.aspnetcore.jsonpatch.6.0.20.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.20\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.20.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -38,6 +39,8 @@
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.32.1\\microsoft.identitymodel.abstractions.6.32.1.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.32.1\\microsoft.identitymodel.jsonwebtokens.6.32.1.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.identitymodel.logging\\6.32.1\\microsoft.identitymodel.logging.6.32.1.nupkg.sha512",
+    "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.10.0\\microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
+    "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.10.0\\microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.32.1\\microsoft.identitymodel.tokens.6.32.1.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
