@@ -39,6 +39,9 @@ namespace CityInfo.Api.Controllers
         public async Task<ActionResult<IEnumerable<PointOfInterestDto>>> GetPointsOfInterest(
             int cityId)
         {
+
+            var cityName = User.Claims.FirstOrDefault(c => c.Type == "city")?.Value;
+
             if (!await _cityInfoRepository.CityExistsAsync(cityId))
             {
                 _logger.LogInformation(
