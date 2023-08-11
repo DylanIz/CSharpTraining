@@ -12,7 +12,7 @@ namespace CityInfo.Api.Controllers
 {
     [Route("api/cities/{cityId}/pointsofinterest")]
     [ApiController]
-    [Authorize]
+    [Authorize(Policy = "MustBeFromAntwerp")]
     public class PointsOfInterestController : ControllerBase
     {
         private readonly ILogger<PointsOfInterestController> _logger;
@@ -41,6 +41,11 @@ namespace CityInfo.Api.Controllers
         {
 
             var cityName = User.Claims.FirstOrDefault(c => c.Type == "city")?.Value;
+
+            if (!await _cityInfoRepository.CityNameMatchesCityId(cityName, cityId))
+            {
+                return Forbid();
+            }
 
             if (!await _cityInfoRepository.CityExistsAsync(cityId))
             {
