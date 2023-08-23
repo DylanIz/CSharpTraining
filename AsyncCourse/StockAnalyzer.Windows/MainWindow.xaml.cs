@@ -27,9 +27,23 @@ public partial class MainWindow : Window
 
     private async void Search_Click(object sender, RoutedEventArgs e)
     {
-        BeforeLoadingStockData();
-        
-        AfterLoadingStockData();
+        try
+        {
+            BeforeLoadingStockData();
+
+            await GetStocks();
+        }
+        catch (Exception ex)
+        {
+            Notes.Text = ex.Message;
+        }
+        finally
+        {
+            AfterLoadingStockData();
+        }
+        //var getStocksTask = GetStocks();
+
+        //await getStocksTask;
     }
 
     //Task expects no return
