@@ -41,7 +41,7 @@ public partial class MainWindow : Window
 
         AfterLoadingStockData();
     }
-
+     
 
 
 
