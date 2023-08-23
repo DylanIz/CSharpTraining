@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StockAnalyzer.Windows
-build_property.ProjectDir = C:\Users\DDrumgoole\Downloads\c-sharp-10-asynchronous-programming\02\demos\Windows\Start_Here\StockAnalyzer.Windows\
+build_property.ProjectDir = C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\AsyncCourse\StockAnalyzer.Windows\

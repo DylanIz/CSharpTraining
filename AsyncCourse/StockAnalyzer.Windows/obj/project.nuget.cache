@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+ywMVUI+HDbhngBMZaexdb6y18BRC8LQ9k+EBSPcatKgeEl1YKhzfVBnMFqvUymoLDiFJnMs/zOB7lS3shqBvA==",
+  "dgSpecHash": "K+LvF88n8uNKkFbMC7v8yp9BkB8T2CXdTE1Z1QCfyBW7wSguy1V/NZqGJPp/eZWdbHD0OmMjQPWxErpR0d0DnQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DDrumgoole\\Downloads\\c-sharp-10-asynchronous-programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Windows\\StockAnalyzer.Windows.csproj",
+  "projectFilePath": "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\AsyncCourse\\StockAnalyzer.Windows\\StockAnalyzer.Windows.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DDrumgoole\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],

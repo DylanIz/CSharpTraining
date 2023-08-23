@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DDrumgoole\\Downloads\\c-sharp-10-asynchronous-programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Web\\StockAnalyzer.Web.csproj": {}
+    "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\AsyncCourse\\StockAnalyzer.Web\\StockAnalyzer.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DDrumgoole\\Downloads\\c-sharp-10-asynchronous-programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj": {
+    "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\AsyncCourse\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DDrumgoole\\Downloads\\c-sharp-10-asynchronous-programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj",
+        "projectUniqueName": "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\AsyncCourse\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj",
         "projectName": "StockAnalyzer.Core",
-        "projectPath": "C:\\Users\\DDrumgoole\\Downloads\\c-sharp-10-asynchronous-programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj",
+        "projectPath": "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\AsyncCourse\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj",
         "packagesPath": "C:\\Users\\DDrumgoole\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DDrumgoole\\Downloads\\c-sharp-10-asynchronous-programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\obj\\",
+        "outputPath": "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\AsyncCourse\\StockAnalyzer.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DDrumgoole\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\DDrumgoole\\Downloads\\c-sharp-10-asynchronous-programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Web\\StockAnalyzer.Web.csproj": {
+    "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\AsyncCourse\\StockAnalyzer.Web\\StockAnalyzer.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DDrumgoole\\Downloads\\c-sharp-10-asynchronous-programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Web\\StockAnalyzer.Web.csproj",
+        "projectUniqueName": "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\AsyncCourse\\StockAnalyzer.Web\\StockAnalyzer.Web.csproj",
         "projectName": "StockAnalyzer.Web",
-        "projectPath": "C:\\Users\\DDrumgoole\\Downloads\\c-sharp-10-asynchronous-programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Web\\StockAnalyzer.Web.csproj",
+        "projectPath": "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\AsyncCourse\\StockAnalyzer.Web\\StockAnalyzer.Web.csproj",
         "packagesPath": "C:\\Users\\DDrumgoole\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DDrumgoole\\Downloads\\c-sharp-10-asynchronous-programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Web\\obj\\",
+        "outputPath": "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\AsyncCourse\\StockAnalyzer.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DDrumgoole\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -90,8 +90,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\DDrumgoole\\Downloads\\c-sharp-10-asynchronous-programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj": {
-                "projectPath": "C:\\Users\\DDrumgoole\\Downloads\\c-sharp-10-asynchronous-programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj"
+              "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\AsyncCourse\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj": {
+                "projectPath": "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\AsyncCourse\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj"
               }
             }
           }
