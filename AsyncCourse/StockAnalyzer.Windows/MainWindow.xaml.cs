@@ -31,20 +31,24 @@ public partial class MainWindow : Window
     {
         try
         {
-            BeforeLoadingStockData();
-
-            var lines = File.ReadAllLines("StockPrices_Small.csv");
-
-            var data = new List<StockPrice>();
-
-            foreach(var line in lines.Skip(1)) 
+            Task.Run(() =>
             {
-                var price = StockPrice.FromCSV(line);
 
-                data.Add(price);
-            }
+                BeforeLoadingStockData();
 
-            Stocks.ItemsSource = data.Where(sp => sp.Identifier == StockIdentifier.Text);
+                var lines = File.ReadAllLines("StockPrices_Small.csv");
+
+                var data = new List<StockPrice>();
+
+                foreach (var line in lines.Skip(1))
+                {
+                    var price = StockPrice.FromCSV(line);
+
+                    data.Add(price);
+                }
+
+                Stocks.ItemsSource = data.Where(sp => sp.Identifier == StockIdentifier.Text);
+            });
         }
         catch (Exception ex)
         {
