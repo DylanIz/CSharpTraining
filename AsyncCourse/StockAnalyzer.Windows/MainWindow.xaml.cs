@@ -33,32 +33,41 @@ public partial class MainWindow : Window
         {
             BeforeLoadingStockData();
 
-            var loadLinesTask = Task.Run(() => { 
+            var loadLinesTask = Task.Run(() =>
+            {
 
                 var lines = File.ReadAllLines("StockPrices_Small.csv");
 
                 return lines;
-
-                //var data = new List<StockPrice>();
-
-                //foreach (var line in lines.Skip(1))
-                //{
-                //    var price = StockPrice.FromCSV(line);
-
-                //    data.Add(price);
-                //}
-
-                //Dispatcher.Invoke(() =>
-                //{
-                //    Stocks.ItemsSource = data.Where(sp => sp.Identifier == StockIdentifier.Text);
-                //});
-             });
-
-            loadLinesTask.ContinueWith((completedTask) =>
-            {
-                var lines = completedTask.Result;
             });
 
+                var processStocksTask =
+                    loadLinesTask.ContinueWith((completedTask) =>
+
+                {
+                        var lines = completedTask.Result;
+
+                        var data = new List<StockPrice>();
+
+                        foreach (var line in lines.Skip(1))
+                        {
+                            var price = StockPrice.FromCSV(line);
+
+                            data.Add(price);
+                        }
+
+                        Dispatcher.Invoke(() =>
+                        {
+                            Stocks.ItemsSource = data.Where(sp => sp.Identifier == StockIdentifier.Text);
+                        });
+                 });
+
+                processStocksTask.ContinueWith(_ => {
+                    Dispatcher.Invoke(() =>
+                    {
+                        AfterLoadingStockData();
+                    });
+                });
         }
         catch (Exception ex)
         {
@@ -66,7 +75,7 @@ public partial class MainWindow : Window
         }
         finally
         {
-            AfterLoadingStockData();
+            
         }
         //var getStocksTask = GetStocks();
 
