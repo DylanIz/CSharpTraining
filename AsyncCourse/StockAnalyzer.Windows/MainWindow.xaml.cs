@@ -31,10 +31,9 @@ public partial class MainWindow : Window
     {
         try
         {
-            Task.Run(() =>
-            {
+            BeforeLoadingStockData();
 
-                BeforeLoadingStockData();
+            Task.Run(() => { 
 
                 var lines = File.ReadAllLines("StockPrices_Small.csv");
 
@@ -47,8 +46,12 @@ public partial class MainWindow : Window
                     data.Add(price);
                 }
 
-                Stocks.ItemsSource = data.Where(sp => sp.Identifier == StockIdentifier.Text);
+                Dispatcher.Invoke(() =>
+                {
+                    Stocks.ItemsSource = data.Where(sp => sp.Identifier == StockIdentifier.Text);
+                });
             });
+            
         }
         catch (Exception ex)
         {
