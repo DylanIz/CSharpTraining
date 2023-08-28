@@ -33,25 +33,32 @@ public partial class MainWindow : Window
         {
             BeforeLoadingStockData();
 
-            Task.Run(() => { 
+            var loadLinesTask = Task.Run(() => { 
 
                 var lines = File.ReadAllLines("StockPrices_Small.csv");
 
-                var data = new List<StockPrice>();
+                return lines;
 
-                foreach (var line in lines.Skip(1))
-                {
-                    var price = StockPrice.FromCSV(line);
+                //var data = new List<StockPrice>();
 
-                    data.Add(price);
-                }
+                //foreach (var line in lines.Skip(1))
+                //{
+                //    var price = StockPrice.FromCSV(line);
 
-                Dispatcher.Invoke(() =>
-                {
-                    Stocks.ItemsSource = data.Where(sp => sp.Identifier == StockIdentifier.Text);
-                });
+                //    data.Add(price);
+                //}
+
+                //Dispatcher.Invoke(() =>
+                //{
+                //    Stocks.ItemsSource = data.Where(sp => sp.Identifier == StockIdentifier.Text);
+                //});
+             });
+
+            loadLinesTask.ContinueWith((completedTask) =>
+            {
+                var lines = completedTask.Result;
             });
-            
+
         }
         catch (Exception ex)
         {
