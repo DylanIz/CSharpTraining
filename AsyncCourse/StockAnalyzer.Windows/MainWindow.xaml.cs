@@ -33,33 +33,38 @@ public partial class MainWindow : Window
         {
             BeforeLoadingStockData();
 
-            var loadLinesTask = Task.Run(() =>
+            var loadLinesTask = Task.Run(async () =>
             {
+                using var stream = new StreamReader(File.OpenRead("StockPrices_Small.csv"));
 
-                var lines = File.ReadAllLines("StockPrices_Small.csv");
+                var lines = new List<string>();
 
+                while(await stream.ReadLineAsync() is string line)
+                {
+                    lines.Add(line);
+                }
                 return lines;
             });
-
-                var processStocksTask =
-                    loadLinesTask.ContinueWith((completedTask) =>
+            
+            var processStocksTask =
+                loadLinesTask.ContinueWith((completedTask) =>
 
                 {
-                        var lines = completedTask.Result;
+                    var lines = completedTask.Result;
 
-                        var data = new List<StockPrice>();
+                    var data = new List<StockPrice>();
 
-                        foreach (var line in lines.Skip(1))
-                        {
-                            var price = StockPrice.FromCSV(line);
+                    foreach (var line in lines.Skip(1))
+                    {
+                       var price = StockPrice.FromCSV(line);
 
-                            data.Add(price);
-                        }
+                       data.Add(price);
+                    }
 
-                        Dispatcher.Invoke(() =>
-                        {
-                            Stocks.ItemsSource = data.Where(sp => sp.Identifier == StockIdentifier.Text);
-                        });
+                    Dispatcher.Invoke(() =>
+                    {
+                       Stocks.ItemsSource = data.Where(sp => sp.Identifier == StockIdentifier.Text);
+                    });
                  });
 
                 processStocksTask.ContinueWith(_ => {
