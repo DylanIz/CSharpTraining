@@ -44,3 +44,6 @@ C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\OauthCourse\Dylan.IDP\obj\De
 C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\OauthCourse\Dylan.IDP\obj\Debug\net6.0\Dylan.IDP.pdb
 C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\OauthCourse\Dylan.IDP\obj\Debug\net6.0\Dylan.IDP.genruntimeconfig.cache
 C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\OauthCourse\Dylan.IDP\obj\Debug\net6.0\ref\Dylan.IDP.dll
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\OauthCourse\Dylan.IDP\bin\Debug\net6.0\Dylan.IDP.staticwebassets.runtime.json
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\OauthCourse\Dylan.IDP\obj\Debug\net6.0\Dylan.IDP.RazorAssemblyInfo.cache
+C:\Users\DDrumgoole\Documents\GitHub\CSharpTraining\OauthCourse\Dylan.IDP\obj\Debug\net6.0\Dylan.IDP.RazorAssemblyInfo.cs
