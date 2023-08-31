@@ -69,9 +69,20 @@ public partial class MainWindow : Window
                 loadingTasks.Add(loadTask);
             }
 
-            var allStocks = await Task.WhenAll(loadingTasks);
+            var timeout = Task.Delay(2000);
 
-            Stocks.ItemsSource = allStocks.SelectMany(x => x);
+            var allStocksLoadingTask = Task.WhenAll(loadingTasks);
+
+            var completedTask = await Task.WhenAny(timeout, 
+                allStocksLoadingTask);
+
+            if(completedTask == timeout)
+            {
+                cancellationTokenSource.Cancel();
+                throw new OperationCanceledException("Timeout!");
+            }
+
+            Stocks.ItemsSource = allStocksLoadingTask.Result.SelectMany(x => x);
         }
         catch (Exception ex)
         {
