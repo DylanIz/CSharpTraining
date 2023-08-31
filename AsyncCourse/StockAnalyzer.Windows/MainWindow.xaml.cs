@@ -54,14 +54,24 @@ public partial class MainWindow : Window
 
             BeforeLoadingStockData();
 
+            var identifiers = StockIdentifier.Text
+                                             .Split(',', ' ');
+
             var service = new StockService();
 
-            var data = await service.GetStockPricesFor(
-                StockIdentifier.Text,
-                cancellationTokenSource.Token
-                );
+            var loadingTasks = new List<Task<IEnumerable<StockPrice>>>();
 
-            Stocks.ItemsSource = data;
+            foreach(var identifier in identifiers)
+            {
+                var loadTask = service.GetStockPricesFor(identifier,
+                    cancellationTokenSource.Token);
+
+                loadingTasks.Add(loadTask);
+            }
+
+            var allStocks = await Task.WhenAll(loadingTasks);
+
+            Stocks.ItemsSource = allStocks;
         }
         catch (Exception ex)
         {
