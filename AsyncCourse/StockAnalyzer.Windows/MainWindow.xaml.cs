@@ -82,7 +82,9 @@ public partial class MainWindow : Window
                 throw new OperationCanceledException("Timeout!");
             }
 
-            Stocks.ItemsSource = allStocksLoadingTask.Result.SelectMany(x => x);
+            Stocks.ItemsSource = allStocksLoadingTask
+                .Result
+                .SelectMany(x => x);
         }
         catch (Exception ex)
         {
