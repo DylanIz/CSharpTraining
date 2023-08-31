@@ -43,6 +43,11 @@ public partial class MainWindow : Window
         {
             cancellationTokenSource = new();
 
+            cancellationTokenSource.Token.Register(() =>
+            {
+                Notes.Text = "Cancellation Requested";
+            });
+
             Search.Content = "Cancel"; //button
 
 
@@ -70,7 +75,11 @@ public partial class MainWindow : Window
                     {
                         Stocks.ItemsSource = data.Where(sp => sp.Identifier == StockIdentifier.Text);
                     });
-                });
+                },
+                cancellationTokenSource.Token,
+                TaskContinuationOptions.OnlyOnRanToCompletion,
+                TaskScheduler.Current
+                );
 
             processStocksTask.ContinueWith(_ =>
             {
@@ -110,7 +119,10 @@ public partial class MainWindow : Window
 
             while (await stream.ReadLineAsync() is string line)
             {
-                if(cancellationToken.IsCancellationRequested)
+                if (cancellationToken.IsCancellationRequested)
+                {
+                    break;
+                }
                 lines.Add(line);
             }
             return lines;
