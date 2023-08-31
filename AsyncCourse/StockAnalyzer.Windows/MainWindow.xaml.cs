@@ -71,7 +71,7 @@ public partial class MainWindow : Window
 
             var allStocks = await Task.WhenAll(loadingTasks);
 
-            Stocks.ItemsSource = allStocks;
+            Stocks.ItemsSource = allStocks.SelectMany(x => x);
         }
         catch (Exception ex)
         {
