@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using StockAnalyzer.Core;
 using StockAnalyzer.Core.Domain;
+using StockAnalyzer.Core.Services;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -27,7 +28,7 @@ public partial class MainWindow : Window
 
     CancellationTokenSource? cancellationTokenSource;
 
-    private void Search_Click(object sender, RoutedEventArgs e)
+    private async void Search_Click(object sender, RoutedEventArgs e)
     {
         if (cancellationTokenSource is not null)
         {
@@ -53,46 +54,14 @@ public partial class MainWindow : Window
 
             BeforeLoadingStockData();
 
-            Task<List<string>> loadLinesTask = 
-                SearchForStocks(cancellationTokenSource.Token);
+            var service = new StockService();
 
-            var processStocksTask =
-                loadLinesTask.ContinueWith((completedTask) =>
-
-                {
-                    var lines = completedTask.Result;
-
-                    var data = new List<StockPrice>();
-
-                    foreach (var line in lines.Skip(1))
-                    {
-                        var price = StockPrice.FromCSV(line);
-
-                        data.Add(price);
-                    }
-
-                    Dispatcher.Invoke(() =>
-                    {
-                        Stocks.ItemsSource = data.Where(sp => sp.Identifier == StockIdentifier.Text);
-                    });
-                },
-                cancellationTokenSource.Token,
-                TaskContinuationOptions.OnlyOnRanToCompletion,
-                TaskScheduler.Current
+            var data = await service.GetStockPricesFor(
+                StockIdentifier.Text,
+                cancellationTokenSource.Token
                 );
 
-            processStocksTask.ContinueWith(_ =>
-            {
-                Dispatcher.Invoke(() =>
-                {
-                    AfterLoadingStockData();
-
-                    cancellationTokenSource?.Dispose();
-                    cancellationTokenSource = null;
-
-                    Search.Content = "Search";
-                });
-            });
+            Stocks.ItemsSource = data;
         }
         catch (Exception ex)
         {
@@ -100,7 +69,11 @@ public partial class MainWindow : Window
         }
         finally
         {
-            
+            AfterLoadingStockData();
+            cancellationTokenSource?.Dispose();
+            cancellationTokenSource = null;
+
+            Search.Content = "Search";
         }
         //var getStocksTask = GetStocks();
 
