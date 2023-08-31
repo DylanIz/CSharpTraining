@@ -32,10 +32,20 @@ public partial class MainWindow : Window
         if (cancellationTokenSource is not null)
         {
             cancellationTokenSource.Cancel();
+            cancellationTokenSource.Dispose();
+            cancellationTokenSource = null;
+
+            Search.Content = "Search";
+            return;
         }
 
         try
         {
+            cancellationTokenSource = new();
+
+            Search.Content = "Cancel"; //button
+
+
             BeforeLoadingStockData();
 
             var loadLinesTask = Task.Run(async () =>
