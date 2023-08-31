@@ -48,19 +48,9 @@ public partial class MainWindow : Window
 
             BeforeLoadingStockData();
 
-            var loadLinesTask = Task.Run(async () =>
-            {
-                using var stream = new StreamReader(File.OpenRead("StockPrices_Small.csv"));
+            Task<List<string>> loadLinesTask = 
+                SearchForStocks(cancellationTokenSource.Token);
 
-                var lines = new List<string>();
-
-                while(await stream.ReadLineAsync() is string line)
-                {
-                    lines.Add(line);
-                }
-                return lines;
-            });
-            
             var processStocksTask =
                 loadLinesTask.ContinueWith((completedTask) =>
 
@@ -71,23 +61,29 @@ public partial class MainWindow : Window
 
                     foreach (var line in lines.Skip(1))
                     {
-                       var price = StockPrice.FromCSV(line);
+                        var price = StockPrice.FromCSV(line);
 
-                       data.Add(price);
+                        data.Add(price);
                     }
 
                     Dispatcher.Invoke(() =>
                     {
-                       Stocks.ItemsSource = data.Where(sp => sp.Identifier == StockIdentifier.Text);
-                    });
-                 });
-
-                processStocksTask.ContinueWith(_ => {
-                    Dispatcher.Invoke(() =>
-                    {
-                        AfterLoadingStockData();
+                        Stocks.ItemsSource = data.Where(sp => sp.Identifier == StockIdentifier.Text);
                     });
                 });
+
+            processStocksTask.ContinueWith(_ =>
+            {
+                Dispatcher.Invoke(() =>
+                {
+                    AfterLoadingStockData();
+
+                    cancellationTokenSource?.Dispose();
+                    cancellationTokenSource = null;
+
+                    Search.Content = "Search";
+                });
+            });
         }
         catch (Exception ex)
         {
@@ -100,6 +96,25 @@ public partial class MainWindow : Window
         //var getStocksTask = GetStocks();
 
         //await getStocksTask;
+    }
+
+    private static Task<List<string>> SearchForStocks(
+        CancellationToken cancellationToken
+        )
+    {
+        return Task.Run(async () =>
+        {
+            using var stream = new StreamReader(File.OpenRead("StockPrices_Small.csv"));
+
+            var lines = new List<string>();
+
+            while (await stream.ReadLineAsync() is string line)
+            {
+                if(cancellationToken.IsCancellationRequested)
+                lines.Add(line);
+            }
+            return lines;
+        }, cancellationToken);
     }
 
     //Task expects no return
