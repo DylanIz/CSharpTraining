@@ -25,10 +25,15 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
 
-
+    CancellationTokenSource? cancellationTokenSource;
 
     private void Search_Click(object sender, RoutedEventArgs e)
     {
+        if (cancellationTokenSource is not null)
+        {
+            cancellationTokenSource.Cancel();
+        }
+
         try
         {
             BeforeLoadingStockData();
