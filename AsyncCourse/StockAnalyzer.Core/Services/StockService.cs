@@ -65,6 +65,6 @@ public class MockStockService : IStockService
             }            
         };
 
-        return stocks;
+        var task = Task.FromResult(stocks.Where(stock => stock.Identifier == stockIdentifier));
     }
 }

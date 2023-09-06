@@ -69,7 +69,7 @@ public partial class MainWindow : Window
                 loadingTasks.Add(loadTask);
             }
 
-            var timeout = Task.Delay(2000);
+            var timeout = Task.Delay(120000);
 
             var allStocksLoadingTask = Task.WhenAll(loadingTasks);
 
