@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "fb51dzv6Cliu6UJIj0ZBv1toFlWSrcpD0kH4rUyrV+axwZ5iY/7cHb8QX7aNwMado8S5091x6ycDYCiTTqPKzQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DDrumgoole\\Documents\\GitHub\\CSharpTraining\\C#RealWorldApp\\Globomantics.Windows\\Globomantics.Windows.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DDrumgoole\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0\\communitytoolkit.mvvm.8.2.0.nupkg.sha512",
+    "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+    "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\DDrumgoole\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\DDrumgoole\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\DDrumgoole\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
